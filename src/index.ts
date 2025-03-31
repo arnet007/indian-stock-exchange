@@ -18,7 +18,7 @@ const server = new McpServer({
 // Helper function for making NWS API requests
 async function makeNWSRequest<T>(url: string): Promise<T | null> {
   const headers = {
-    'x-api-key':'sk-live-ecVWXWmgQvSVDVq5v1dtdpctmSFZtpZB2IozSqOp'
+    'x-api-key':<Indian Stock Exchange API Key>
   };
 
   try {
