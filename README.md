@@ -23,7 +23,7 @@ For more details, visit - [Indian Stock Market API](https://indianapi.in/indian-
 Clone the repository and update the API key in `src/.env`:
 
 ```sh
-ISE_API_KEY=your_api_key_here
+Update your API Key in src/index.js at <Indian Stock Exchange API Key>
 ```
 ### 2. Install Packages and Build
 Run the following commands to install dependencies and build the project:
