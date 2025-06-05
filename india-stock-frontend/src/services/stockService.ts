@@ -18,7 +18,7 @@ import {
 } from '../types/stock';
 
 const BASE_URL = "https://stock.indianapi.in";
-const API_KEY = "sk-live-WVnsfYKty2FXOXF5EKVX8oUt3z99FgzYlGFGJ4IK";
+const API_KEY = "api-from-indianapi";
 
 const api = axios.create({
   baseURL: BASE_URL,
