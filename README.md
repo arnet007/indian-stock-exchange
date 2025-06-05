@@ -1,57 +1,112 @@
-# Indian Stock Exchange MCP Server
+# Indian Stock Exchange Dashboard
 
-MCP Server for providing detailed financial data for companies listed on the Bombay Stock Exchange (BSE) and National Stock Exchange (NSE), empowering users with comprehensive insights into the dynamic Indian stock market.
+A modern React-based dashboard for tracking Indian stock market data, including real-time stock prices, market trends, and financial information.
 
-For more details, visit - [Indian Stock Market API](https://indianapi.in/indian-stock-market)
+## Features
 
-## Tools
+- **Real-time Stock Search**: Search and view live stock prices from BSE and NSE
+- **Market Overview**: 
+  - Trending Stocks
+  - NSE Most Active Stocks
+  - BSE Most Active Stocks
+  - Price Shockers
+  - Commodity Futures
+- **Detailed Stock Information**:
+  - Current BSE/NSE Prices
+  - Price Change Percentage
+  - 52-Week High/Low
+  - Performance Metrics
 
-(For API details, please visit - [Indian Stock Market API](https://indianapi.in/indian-stock-market))
+## Tech Stack
 
-- **get-market-news** - Get the latest market news  
-- **get-news** - Get Indian Stock Exchange News  
-- **get-stock-details** - Get details for a specific stock  
-- **get-stock-history** - Get historical data for a specific stock  
-- **get-stock-price** - Get the latest stock price for a specific stock  
-- **get-stock-recommendations** - Get stock recommendations based on market trends  
-- **get-top-gainers** - Get the top gaining stocks  
-- **get-top-losers** - Get the top losing stocks  
+- **Frontend**: React with TypeScript
+- **UI Framework**: Material-UI (MUI)
+- **State Management**: React Hooks
+- **API Integration**: Axios
+- **Development Tools**: 
+  - Create React App
+  - TypeScript
+  - ESLint
+  - Prettier
 
-## Setup
+## Getting Started
 
-### 1. Download the Repo and Update API Key
-Clone the repository and update the API key in `src/.env`:
+### Prerequisites
 
-```sh
-Update your API Key in src/index.js at <Indian Stock Exchange API Key>
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/indian-stock-exchange.git
+cd indian-stock-exchange
 ```
-### 2. Install Packages and Build
-Run the following commands to install dependencies and build the project:
 
-```sh
+2. Navigate to the frontend directory:
+```bash
+cd india-stock-frontend
+```
+
+3. Install dependencies:
+```bash
 npm install
-npm run build
 ```
 
-### 3. Installing on Claude Desktop
-Before starting, ensure Node.js is installed on your desktop for npx to work.
-
-Go to: Settings > Developer > Edit Config
-
-Add the following to your claude_desktop_config.json:
-
-```sh
-{
-  "mcpServers": {
-    "IndiaStockExchange": {
-      "command": "node",
-      "args": [
-        "<path_to_project>/build/index.js"
-      ]
-    }
-  }
-}
+4. Start the development server:
+```bash
+npm start
 ```
 
-### 4. Restart Claude Desktop
-After updating the configuration, restart Claude Desktop to apply the changes.
+The application will be available at `http://localhost:5000`
+
+## Project Structure
+
+```
+india-stock-frontend/
+├── public/
+├── src/
+│   ├── components/         # React components
+│   ├── services/          # API services
+│   ├── types/            # TypeScript type definitions
+│   ├── App.tsx           # Main application component
+│   └── index.tsx         # Application entry point
+├── package.json
+└── tsconfig.json
+```
+
+## Available Scripts
+
+- `npm start`: Runs the app in development mode
+- `npm test`: Launches the test runner
+- `npm run build`: Builds the app for production
+- `npm run eject`: Ejects from Create React App
+
+## API Integration
+
+The application integrates with the Indian Stock Exchange API for real-time market data. It includes:
+- Stock price lookups
+- Market trends
+- Company information
+- Historical data
+
+For development purposes, the application includes mock data for common stocks (RELIANCE, TCS, INFY) when the API is unavailable.
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Indian Stock Exchange API for providing market data
+- Material-UI team for the excellent UI components
+- React community for the amazing tools and libraries
